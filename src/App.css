@@ -1,39 +1,75 @@
 /* App.css */
 body {
- font-family: Arial, sans-serif;
- background-color: #f9f9f9;
- margin: 0;
- padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
 }
+
 h2 {
- margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #222;
 }
+
 select {
- padding: 0.5rem;
- font-size: 1rem;
- margin-bottom: 1.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
 .lista-libros {
- display: flex;
- flex-wrap: wrap;
- gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
+
 .card-libro {
- background-color: white;
- border: 1px solid #ccc;
- border-radius: 10px;
- padding: 1rem;
- width: 250px;
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- transition: transform 0.2s ease-in-out;
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 1.2rem;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
 .card-libro:hover {
- transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .card-libro h3 {
- margin-top: 0;
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #444;
 }
+
+.card-libro p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
 .card-libro a {
- text-decoration: none;
- color: #007bff;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.card-libro a:hover {
+  color: #0056b3;
 }
